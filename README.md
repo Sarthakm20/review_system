@@ -1,15 +1,20 @@
 This project is a movie content management system for IMDb, allowing the content team to upload movie-related data using a CSV file and providing APIs to fetch and manage the data.
 
 **Tech Stack**
+
 Backend: Python (Flask)
 Database: MongoDB
 Dependencies: Flask, pandas, pymongo
+
 **Features**
+
 CSV Upload API - Uploads movie data from a CSV file (up to 1GB).
 Movies List API - Fetches paginated movie data with filtering & sorting options.
 Filtering: Year of release, Language
 Sorting: Release Date (asc/desc), Rating (asc/desc)
+
 **Setup Instructions**
+
 1. Clone the Repository
 git clone https://github.com/Sarthakm20/review_system.git
 cd review_system
@@ -27,6 +32,7 @@ python run.py
 Server should start at http://127.0.0.1:5000/.
 
 **API Endpoints**
+
 1. Upload CSV
 Endpoint: POST http://127.0.0.1:5000/upload
 Description: Uploads a CSV file containing movie data.
@@ -42,6 +48,7 @@ sort_by (options: release_date or rating)
 order (values: asc or desc)
 
 **Testing the APIs**
+
 Use Postman to test the APIs.
 1) Upload the CSV file
 POST and enter the Endpoint:http://127.0.0.1:5000/upload
