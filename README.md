@@ -28,6 +28,7 @@ python -m venv venv
 source venv/bin/activate  # On Mac/Linux
 
 venv\Scripts\activate  # On Windows
+
 4. Install Dependencies
 pip install -r requirements.txt
 5. Configure MongoDB
