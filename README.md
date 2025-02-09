@@ -21,8 +21,11 @@ Sorting: Release Date (asc/desc), Rating (asc/desc)
 **Setup Instructions**
 
 1. Clone the Repository
-git clone https://github.com/Sarthakm20/review_system.git
-cd review_system
+   
+   git clone https://github.com/Sarthakm20/review_system.git
+   
+   cd review_system
+   
 2. Create a Virtual Environment
    
    python -m venv venv
@@ -32,12 +35,15 @@ cd review_system
    venv\Scripts\activate  # On Windows
 
 3. Install Dependencies
+   
 pip install -r requirements.txt
 4. Configure MongoDB
 Ensure MongoDB is installed and running.
 Update config.py with the MongoDB connection URI.
 5. Run the Application
+
 python run.py
+
 Server should start at http://127.0.0.1:5000/.
 
 **API Endpoints**
