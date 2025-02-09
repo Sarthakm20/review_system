@@ -82,8 +82,10 @@ Use Postman to test the APIs.
 
       B) to Test Filtering
          Enter Url: http://127.0.0.1:5000/movies?year=2020 (for year)
+   
                     http://127.0.0.1:5000/movies?language=English (for language)
 
       C) to Test Sorting
          Enter Url: http://127.0.0.1:5000/movies?sort=release_date&order=asc (ascending order)
+   
                     http://127.0.0.1:5000/movies?sort=rating&order=desc (descending order)
