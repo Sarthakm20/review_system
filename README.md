@@ -1,4 +1,4 @@
-This project is a movie content management system for IMDb, allowing the content team to upload movie-related data using a CSV file and providing APIs to fetch and manage the data.
+This project is a movie content management system allowing the content team to upload movie-related data using a CSV file and providing APIs to fetch and manage the data.
 
 **Tech Stack**
 
@@ -40,9 +40,10 @@ Server should start at http://127.0.0.1:5000/.
 
 1. Upload CSV
    Endpoint: POST http://127.0.0.1:5000/upload
+   
    Description: Uploads a CSV file containing movie data.
 
-2. Fetch Movies
+3. Fetch Movies
    Endpoint: GET http://127.0.0.1:5000/movies
 
    Query Parameters:
@@ -83,9 +84,9 @@ Use Postman to test the APIs.
       B) to Test Filtering
          Enter Url: http://127.0.0.1:5000/movies?year=2020 (for year)
    
-                    http://127.0.0.1:5000/movies?language=English (for language)
+         Enter Url: http://127.0.0.1:5000/movies?language=English (for language)
 
       C) to Test Sorting
          Enter Url: http://127.0.0.1:5000/movies?sort=release_date&order=asc (ascending order)
    
-                    http://127.0.0.1:5000/movies?sort=rating&order=desc (descending order)
+         Enter Url: http://127.0.0.1:5000/movies?sort=rating&order=desc (descending order)
