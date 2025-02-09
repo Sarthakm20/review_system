@@ -39,25 +39,25 @@ Server should start at http://127.0.0.1:5000/.
 **API Endpoints**
 
 1. Upload CSV
-Endpoint: POST http://127.0.0.1:5000/upload
-Description: Uploads a CSV file containing movie data.
+   Endpoint: POST http://127.0.0.1:5000/upload
+   Description: Uploads a CSV file containing movie data.
 
 2. Fetch Movies
-Endpoint: GET http://127.0.0.1:5000/movies
+   Endpoint: GET http://127.0.0.1:5000/movies
 
-Query Parameters:
+   Query Parameters:
 
-page (default: 1)
+   page (default: 1)
 
-limit (default: 10)
+   limit (default: 10)
 
-year (optional, filters by release year)
+   year (optional, filters by release year)
 
-language (optional, filters by language)
+   language (optional, filters by language)
 
-sort_by (options: release_date or rating)
+   sort_by (options: release_date or rating)
 
-order (values: asc or desc)
+   order (values: asc or desc)
 
 **Testing the APIs**
 
@@ -65,25 +65,25 @@ Use Postman to test the APIs.
 
 1) Upload the CSV file
    
-POST and enter the Endpoint:http://127.0.0.1:5000/upload
+   POST and enter the Endpoint:http://127.0.0.1:5000/upload
 
-In the "Body" tab, select "form-data"
+   In the "Body" tab, select "form-data"
 
-Add a key named file and upload your CSV file and Type="File" and upload the file from the local computer and it should be in CSV format or else, error will be thrown
+   Add a key named file and upload your CSV file and Type="File" and upload the file from the local computer and it should be in CSV format or else, error will be thrown
 
 2) View Movies:
    
-Endpoint: http://127.0.0.1:5000/movies
+   Endpoint: http://127.0.0.1:5000/movies
 
-Method: GET
+   Method: GET
 
-A) to Test pagination
-Enter Url: http://127.0.0.1:5000/movies?page=1&limit=10
+      A) to Test pagination
+         Enter Url: http://127.0.0.1:5000/movies?page=1&limit=10
 
-B) to Test Filtering
-Enter Url: http://127.0.0.1:5000/movies?year=2020 (for year)
-           http://127.0.0.1:5000/movies?language=English (for language)
+      B) to Test Filtering
+         Enter Url: http://127.0.0.1:5000/movies?year=2020 (for year)
+                    http://127.0.0.1:5000/movies?language=English (for language)
 
-C) to Test Sorting
-Enter Url: http://127.0.0.1:5000/movies?sort=release_date&order=asc (ascending order)
-           http://127.0.0.1:5000/movies?sort=rating&order=desc (descending order)
+      C) to Test Sorting
+         Enter Url: http://127.0.0.1:5000/movies?sort=release_date&order=asc (ascending order)
+                    http://127.0.0.1:5000/movies?sort=rating&order=desc (descending order)
