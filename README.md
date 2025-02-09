@@ -36,15 +36,17 @@ Sorting: Release Date (asc/desc), Rating (asc/desc)
 
 3. Install Dependencies
    
-pip install -r requirements.txt
+   pip install -r requirements.txt
+
 4. Configure MongoDB
 Ensure MongoDB is installed and running.
 Update config.py with the MongoDB connection URI.
+
 5. Run the Application
 
-python run.py
+   python run.py
 
-Server should start at http://127.0.0.1:5000/.
+   Server should start at http://127.0.0.1:5000/.
 
 **API Endpoints**
 
