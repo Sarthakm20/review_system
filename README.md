@@ -26,13 +26,14 @@ cd review_system
 2. Create a Virtual Environment
 python -m venv venv
 source venv/bin/activate  # On Mac/Linux
+
 venv\Scripts\activate  # On Windows
-3. Install Dependencies
+4. Install Dependencies
 pip install -r requirements.txt
-4. Configure MongoDB
+5. Configure MongoDB
 Ensure MongoDB is installed and running.
 Update config.py with the MongoDB connection URI.
-5. Run the Application
+6. Run the Application
 python run.py
 Server should start at http://127.0.0.1:5000/.
 
@@ -43,7 +44,7 @@ Server should start at http://127.0.0.1:5000/.
    
    Description: Uploads a CSV file containing movie data.
 
-3. Fetch Movies
+2. Fetch Movies
    Endpoint: GET http://127.0.0.1:5000/movies
 
    Query Parameters:
@@ -79,14 +80,17 @@ Use Postman to test the APIs.
    Method: GET
 
       A) to Test pagination
+   
          Enter Url: http://127.0.0.1:5000/movies?page=1&limit=10
 
       B) to Test Filtering
+   
          Enter Url: http://127.0.0.1:5000/movies?year=2020 (for year)
    
          Enter Url: http://127.0.0.1:5000/movies?language=English (for language)
 
       C) to Test Sorting
+   
          Enter Url: http://127.0.0.1:5000/movies?sort=release_date&order=asc (ascending order)
    
          Enter Url: http://127.0.0.1:5000/movies?sort=rating&order=desc (descending order)
