@@ -25,11 +25,11 @@ git clone https://github.com/Sarthakm20/review_system.git
 cd review_system
 2. Create a Virtual Environment
    
-python -m venv venv
+   python -m venv venv
 
-source venv/bin/activate  # On Mac/Linux
+   source venv/bin/activate  # On Mac/Linux
 
-venv\Scripts\activate  # On Windows
+   venv\Scripts\activate  # On Windows
 
 3. Install Dependencies
 pip install -r requirements.txt
